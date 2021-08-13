@@ -6,9 +6,9 @@
   <body>
     <a-scene>
         <a-camera position="0 5 15"></a-camera>
-        <a-assets timeout="10000">
-            <a-asset-item id="train_obj" src="./models/tinker.obj"></a-asset-item>
-            <a-asset-item id="train_mtl" src="./models/obj.mtl"></a-asset-item>
+        <a-assets timeout="10000">            
+            <a-asset-item id="train_obj" src="./models/train/tinker.obj"></a-asset-item>
+            <a-asset-item id="train_mtl" src="./models/train/obj.mtl"></a-asset-item>
         </a-assets>
         <a-entity position="0 0 0" animation="property:position; from:40 0 0; to:-40 0 0; easing:linear;  loop: true; dur:15000 ">
             <a-entity obj-model="obj:#train_obj; mtl:#train_mtl" rotation="-90 0 0" scale="0.05 0.05 0.05" position="0 -0.5 0"></a-entity>
