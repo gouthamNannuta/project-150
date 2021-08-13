@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-camera position="0 5 15"></a-camera>
+        <a-assets timeout="10000">
+            <a-asset-item id="train_obj" src="./models/tinker.obj"></a-asset-item>
+            <a-asset-item id="train_mtl" src="./models/obj.mtl"></a-asset-item>
+        </a-assets>
+        <a-entity position="0 0 0" animation="property:position; from:40 0 0; to:-40 0 0; easing:linear;  loop: true; dur:15000 ">
+            <a-entity obj-model="obj:#train_obj; mtl:#train_mtl" rotation="-90 0 0" scale="0.05 0.05 0.05" position="0 -0.5 0"></a-entity>
+        </a-entity>
+        <a-entity>
+            <a-box position="0 -0.9 -0.85" rotation="90 0 0" width=70 height=0.1 color="#754031"></a-box>
+            <a-box position="0 -0.9 -2.5" rotation="90 0 0" width=70 height=0.1 color="#754031"></a-box>
+            <a-box position="0 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="1.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-1.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="3 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-3 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="4.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-4.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="6 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-6 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="7.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-7.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="9 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-9 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="10.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-10.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="12 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-12 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="13.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-13.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="15 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-15 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="16.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-16.5 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="18 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+            <a-box position="-18 -1 -1.7" rotation="0 90 0" width=3 height=1 color="#C7C8B9"></a-box>
+
+        </a-entity>
+        <a-plane 
+        id="wall-poster-right"
+        src="./images/desert.jpg"
+        position="0 7 -5.3"
+        rotation="0 0 0"
+        width="40"
+        height="22"
+        ></a-plane>
+        <a-plane 
+        id="wall-poster-right"
+        src="./images/desert.jpg"
+        position="-20 7 5"
+        rotation="0 90 0"
+        width="40"
+        height="22"
+        ></a-plane>
+        <a-plane 
+        id="wall-poster-right"
+        src="./images/desert.jpg"
+        position="20 7 5"
+        rotation="0 -90 0"
+        width="40"
+        height="22"
+        ></a-plane> 
+        <a-circle src="./images/download.jpg" position="-0.4 -0.76 -7" rotation="-90 0 0" radius="50" shadow="receive: true" visible="true"></a-circle>
+
+    </a-scene>
+  </body>
+</html>
